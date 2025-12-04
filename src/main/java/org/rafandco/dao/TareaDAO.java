@@ -13,13 +13,13 @@ import java.util.List;
  * @date 28.11.2025
  */
 public class TareaDAO {
-    private Connection connection;
+    private static Connection connection;
 
     public TareaDAO() {
         this.connection = SingletonConnection.getConnection();
     }
 
-    public void insertar(Tarea tarea) {
+    public static void insertar(Tarea tarea) {
         // INSERT INTO tareas (...)
         String sql = """
                     INSERT INTO tareas (titulo, descripcion, fechaCreacion)

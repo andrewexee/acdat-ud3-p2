@@ -1,5 +1,4 @@
 package org.rafandco.model;
-
 import java.time.LocalDate;
 
 /**

@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96f82ed9-1cd4-4721-8895-ea3b748c26f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/db/Modification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/db/Select.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/model/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/model/Tarea.java" afterDir="false" />
+    </list>
+    <list id="5b887683-fe9a-4f19-b04f-ec796e18a247" name="Changes by jipab" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,48 +27,60 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "andrewexee"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;andrewexee&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rafandco/acdat-ud3-p1",
-    "accountId": "77e82719-8192-4f61-9749-08669c082a4d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/andrewexee/acdat-ud3-p2.git&quot;,
+    &quot;accountId&quot;: &quot;77e82719-8192-4f61-9749-08669c082a4d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="2" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
+        <range start1="4" end1="5" start2="3" end2="4" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
+        <range start1="6" end1="8" start2="5" end2="6" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
+        <range start1="10" end1="10" start2="8" end2="9" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
+        <range start1="14" end1="14" start2="13" end2="43" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
+        <range start1="19" end1="19" start2="48" end2="57" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3673o8eKhEAZG6jlwVuS59od96q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -79,7 +91,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764343954487</updated>
-      <workItem from="1764343957579" duration="5550000" />
+      <workItem from="1764343957579" duration="6827000" />
+      <workItem from="1764857764336" duration="297000" />
+      <workItem from="1764862584230" duration="1497000" />
     </task>
     <servers />
   </component>
