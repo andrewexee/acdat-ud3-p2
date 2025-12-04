@@ -1,6 +1,7 @@
 package org.rafandco;
 
 import org.rafandco.dao.TareaDAO;
+import org.rafandco.db.Definition;
 import org.rafandco.db.SingletonConnection;
 import org.rafandco.model.Tarea;
 import java.sql.Connection;
@@ -10,18 +11,18 @@ import java.util.Scanner;
 public class Main {
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        TareaDAO tareaDAO = new TareaDAO();
+        Definition d = new Definition(SingletonConnection.getConnection());
 
         int opcion = 0;
-        System.out.println("HOLA SOCIOS");
-
-
         do {
             switch (opcion) {
                 case 1:
                     crearNuevaTarea();
                     break;
                 case 2:
+                    for (Tarea tarea : TareaDAO.listarTodas()) {
+                        System.out.println(tarea);
+                    }
                     break;
                 case 3:
                     break;

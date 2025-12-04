@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96f82ed9-1cd4-4721-8895-ea3b748c26f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/model/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/model/Tarea.java" afterDir="false" />
-    </list>
-    <list id="5b887683-fe9a-4f19-b04f-ec796e18a247" name="Changes by jipab" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="96f82ed9-1cd4-4721-8895-ea3b748c26f2" name="Changes" comment="" />
+    <list id="5b887683-fe9a-4f19-b04f-ec796e18a247" name="Changes by jipab" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,18 +33,6 @@
     &quot;accountId&quot;: &quot;77e82719-8192-4f61-9749-08669c082a4d&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java">
-      <ranges>
-        <range start1="2" end1="3" start2="2" end2="2" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
-        <range start1="4" end1="5" start2="3" end2="4" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
-        <range start1="6" end1="8" start2="5" end2="6" changelist="5b887683-fe9a-4f19-b04f-ec796e18a247" />
-        <range start1="10" end1="10" start2="8" end2="9" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="14" end1="14" start2="13" end2="43" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="19" end1="19" start2="48" end2="57" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -93,7 +75,7 @@
       <updated>1764343954487</updated>
       <workItem from="1764343957579" duration="6827000" />
       <workItem from="1764857764336" duration="297000" />
-      <workItem from="1764862584230" duration="1497000" />
+      <workItem from="1764862584230" duration="1991000" />
     </task>
     <servers />
   </component>

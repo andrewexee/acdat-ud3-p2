@@ -38,7 +38,7 @@ public class TareaDAO {
         }
     }
 
-    public void actualizar(Tarea tarea) {
+    public static void actualizar(Tarea tarea) {
         // UPDATE tareas SET ... WHERE id = ?
         String sql = """
                 UPDATE tareas
@@ -60,7 +60,7 @@ public class TareaDAO {
         }
     }
 
-    public void eliminar(int id) {
+    public static void eliminar(int id) {
         // DELETE FROM tareas WHERE id = ?
         String sql = "DELETE FROM tareas WHERE id = ?";
 
@@ -74,7 +74,7 @@ public class TareaDAO {
         }
     }
 
-    public Tarea buscarPorId(int id) {
+    public static Tarea buscarPorId(int id) {
         // SELECT ... FROM tareas WHERE id = ?
         Tarea tareaRes =  null;
 
@@ -99,7 +99,7 @@ public class TareaDAO {
         return tareaRes;
     }
 
-    public List<Tarea> listarTodas() {
+    public static List<Tarea> listarTodas() {
         // SELECT ... FROM tareas
         List<Tarea> tareas = new ArrayList<>();
         Tarea tareaRes = null;
