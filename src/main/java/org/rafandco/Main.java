@@ -4,7 +4,6 @@ import org.rafandco.dao.TareaDAO;
 import org.rafandco.db.Definition;
 import org.rafandco.db.SingletonConnection;
 import org.rafandco.model.Tarea;
-import java.sql.Connection;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -49,12 +48,14 @@ public class Main {
                             \n----------------------------
                             1. Buscar Tarea (por ID)
                             ----------------------------\n""");
+                    System.out.println(buscarPorId());
                     break;
                 case 4:
                     System.out.println("""
                             \n----------------------------
                             4. Marcar como Completada
                             ----------------------------\n""");
+                    marcarComoCompletada();
                     break;
                 case 5:
                     System.out.println("""
@@ -92,14 +93,32 @@ public class Main {
         TareaDAO.insertar(new Tarea(titulo, descripcion, fecha));
     }
 
-    private static void buscarPorId() {
+    private static Tarea buscarPorId() {
         System.out.println("Socio dime el ID de la tarea que estás buscando: ");
         Tarea tarea = TareaDAO.buscarPorId(sc.nextInt());
         sc.nextLine();
         if (tarea != null) {
-            System.out.println(tarea);
+            return tarea;
+        } else {
+            System.out.println("Hermano, vaya mierdon de tarea que has buscado (ni existe)");
+            return null;
+        }
+    }
+
+    private static void marcarComoCompletada() {
+        Tarea tarea = buscarPorId();
+        if (tarea != null) {
+            tarea.setCompletada(true);
+            TareaDAO.actualizar(tarea);
+            System.out.println("Tarea actualizada");
         } else {
             System.out.println("Hermano, vaya mierdon de tarea que has buscado (ni existe)");
         }
+
+    }
+
+    private static void eliminar() {
+        System.out.println("Socio dime el ID de la tarea que estás buscando: ");
+        TareaDAO.eliminar(sc.nextInt());
     }
 }
