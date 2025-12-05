@@ -5,6 +5,7 @@ import org.rafandco.model.Tarea;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,13 +86,16 @@ public class TareaDAO {
 
             ResultSet rs = stmt.executeQuery();
 
-            int ident = (int) rs.getObject("id");
-            String titulo = String.valueOf(rs.getObject("titulo"));
-            String descripcion = String.valueOf(rs.getObject("descripcion"));
-            boolean completada = (boolean) rs.getObject("completada");
-            LocalDate fechaCreacion = (LocalDate) rs.getObject("fechaCreacion");
+            while (rs.next()) {
+                int ident = (int) rs.getObject("id");
+                String titulo = String.valueOf(rs.getObject("titulo"));
+                String descripcion = String.valueOf(rs.getObject("descripcion"));
+                boolean completada = (boolean) rs.getObject("completada");
+                Date fechaCreacionAux = rs.getDate("fechaCreacion");
+                LocalDate fechaCreacion = fechaCreacionAux.toLocalDate();
 
-            tareaRes = new Tarea(ident, titulo, descripcion, completada, fechaCreacion);
+                tareaRes = new Tarea(ident, titulo, descripcion, completada, fechaCreacion);
+            }
         } catch (SQLException e) {
             System.err.println("Error: " + e.getMessage());
         }
@@ -110,15 +114,17 @@ public class TareaDAO {
 
             ResultSet rs = stmt.executeQuery();
 
-            int ident = (int) rs.getObject("id");
-            String titulo = String.valueOf(rs.getObject("titulo"));
-            String descripcion = String.valueOf(rs.getObject("descripcion"));
-            boolean completada = (boolean) rs.getObject("completada");
-            LocalDate fechaCreacion = (LocalDate) rs.getObject("fechaCreacion");
+            while (rs.next()) {
+                int ident = (int) rs.getObject("id");
+                String titulo = String.valueOf(rs.getObject("titulo"));
+                String descripcion = String.valueOf(rs.getObject("descripcion"));
+                boolean completada = (boolean) rs.getObject("completada");
+                Date fechaCreacionAux = rs.getDate("fechaCreacion");
+                LocalDate fechaCreacion = fechaCreacionAux.toLocalDate();
+                tareaRes = new Tarea(ident, titulo, descripcion, completada, fechaCreacion);
+                tareas.add(tareaRes);
+            }
 
-            tareaRes = new Tarea(ident, titulo, descripcion, completada, fechaCreacion);
-
-            tareas.add(tareaRes);
         } catch (SQLException e) {
             System.err.println("Error: " + e.getMessage());
         }

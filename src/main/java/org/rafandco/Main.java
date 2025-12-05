@@ -9,8 +9,11 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner sc = new Scanner(System.in);
+    public static TareaDAO tareaDAO = new TareaDAO();
     public static void main(String[] args) {
         Definition d = new Definition(SingletonConnection.getConnection());
+        d.borrarTablaTareas();
+        d.creaTable();
 
         int opcion = 0;
         do {
@@ -25,6 +28,9 @@ public class Main {
                     5. Eliminar Tarea
                     6. Salir
                     ----------------------------\n""");
+            System.out.print("Ingresa una opción: ");
+            opcion = sc.nextInt();
+            sc.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -86,7 +92,7 @@ public class Main {
         System.out.print("Socio dime el titulo de la tarea: ");
         String titulo =  sc.nextLine();
 
-        System.out.println("Y ahora dime la descripción: ");
+        System.out.print("Y ahora dime la descripción: ");
         String descripcion = sc.nextLine();
 
         LocalDate fecha = LocalDate.now();
@@ -95,7 +101,7 @@ public class Main {
     }
 
     private static Tarea buscarPorId() {
-        System.out.println("Socio dime el ID de la tarea que estás buscando: ");
+        System.out.print("Socio dime el ID de la tarea que estás buscando: ");
         Tarea tarea = TareaDAO.buscarPorId(sc.nextInt());
         sc.nextLine();
         if (tarea != null) {
@@ -119,7 +125,7 @@ public class Main {
     }
 
     private static void eliminar() {
-        System.out.println("Socio dime el ID de la tarea que estás buscando: ");
+        System.out.print("Socio dime el ID de la tarea que estás buscando: ");
         TareaDAO.eliminar(sc.nextInt());
     }
 }

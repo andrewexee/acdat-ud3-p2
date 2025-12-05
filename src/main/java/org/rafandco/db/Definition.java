@@ -35,11 +35,20 @@ public class Definition {
                     "    id SERIAL PRIMARY KEY,\n" +
                     "    titulo VARCHAR(150) NOT NULL,\n" +
                     "    descripcion TEXT,\n" +
-                    "    completada BOOLEAN NOT NULL DEFAULT FALSE,\n" +
-                    "    prioridad SMALLINT CHECK (prioridad BETWEEN 1 AND 5)\n" +
+                    "    fechaCreacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n" +
+                    "    completada BOOLEAN NOT NULL DEFAULT FALSE\n" +
                     ");");
         } catch (SQLException e) {
             System.err.println("Error: " + e.getMessage());
+        }
+    }
+
+    public void borrarTablaTareas() {
+        String sql = "DROP TABLE IF EXISTS tareas";
+        try (Statement stmt = connection.createStatement()) {
+            stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            System.err.println("nigga");
         }
     }
 }
