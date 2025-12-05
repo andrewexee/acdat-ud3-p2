@@ -62,6 +62,7 @@ public class Main {
                             \n----------------------------
                             5. Eliminar Tarea
                             ----------------------------\n""");
+                    eliminar();
                     break;
                 case 6:
                     System.out.println("""

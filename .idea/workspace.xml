@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96f82ed9-1cd4-4721-8895-ea3b748c26f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
-    </list>
-    <list id="0a851efa-b656-4b6d-9429-5fe778dcc05a" name="Changes by jipab" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="96f82ed9-1cd4-4721-8895-ea3b748c26f2" name="Changes" comment="" />
+    <list id="0a851efa-b656-4b6d-9429-5fe778dcc05a" name="Changes by jipab" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,18 +33,6 @@
     &quot;accountId&quot;: &quot;77e82719-8192-4f61-9749-08669c082a4d&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/org/rafandco/Main.java">
-      <ranges>
-        <range start1="51" end1="51" start2="51" end2="52" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="57" end1="57" start2="58" end2="59" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="94" end1="95" start2="96" end2="97" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="99" end1="100" start2="101" end2="102" changelist="96f82ed9-1cd4-4721-8895-ea3b748c26f2" />
-        <range start1="102" end1="102" start2="104" end2="105" changelist="0a851efa-b656-4b6d-9429-5fe778dcc05a" />
-        <range start1="104" end1="104" start2="107" end2="120" changelist="0a851efa-b656-4b6d-9429-5fe778dcc05a" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -93,7 +76,7 @@
       <workItem from="1764343957579" duration="6827000" />
       <workItem from="1764857764336" duration="297000" />
       <workItem from="1764862584230" duration="4090000" />
-      <workItem from="1764948298504" duration="1276000" />
+      <workItem from="1764948298504" duration="1586000" />
     </task>
     <servers />
   </component>
