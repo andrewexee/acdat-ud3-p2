@@ -15,29 +15,60 @@ public class Main {
 
         int opcion = 0;
         do {
+            System.out.println("""
+                    \n----------------------------
+                    Menú Opciones
+                    ----------------------------
+                    1. Crear Nueva Tarea
+                    2. Listar Tareas
+                    3. Buscar Por ID
+                    4. Marcar Como Completada
+                    5. Eliminar Tarea
+                    6. Salir
+                    ----------------------------\n""");
+
             switch (opcion) {
                 case 1:
+                    System.out.println("""
+                            \n----------------------------
+                            1. Creación de nueva Tarea
+                            ----------------------------\n""");
                     crearNuevaTarea();
                     break;
                 case 2:
+                    System.out.println("""
+                            \n----------------------------
+                            2. Listado de Tareas
+                            ----------------------------\n""");
                     for (Tarea tarea : TareaDAO.listarTodas()) {
                         System.out.println(tarea);
                     }
                     break;
                 case 3:
+                    System.out.println("""
+                            \n----------------------------
+                            1. Buscar Tarea (por ID)
+                            ----------------------------\n""");
                     break;
                 case 4:
+                    System.out.println("""
+                            \n----------------------------
+                            4. Marcar como Completada
+                            ----------------------------\n""");
                     break;
                 case 5:
+                    System.out.println("""
+                            \n----------------------------
+                            5. Eliminar Tarea
+                            ----------------------------\n""");
                     break;
                 case 6:
                     System.out.println("""
-                            ----------------------------
+                            \n----------------------------
                             
                             Saliendo de la app (Hasta luego bro)
                             
-                            ----------------------------
-                            """);
+                            ----------------------------\n""");
                     break;
                 default:
                     System.out.println("Número no válido, solo del 1 al 6");
@@ -59,5 +90,15 @@ public class Main {
         LocalDate fecha = LocalDate.now();
 
         TareaDAO.insertar(new Tarea(titulo, descripcion, fecha));
+    }
+
+    private static void buscarPorId() {
+        System.out.println("Socio dime el ID de la tarea que estás buscando: ");
+        int id = sc.nextInt();
+        sc.nextLine();
+
+        Tarea tarea = TareaDAO.buscarPorId(id);
+
+        System.out.println(tarea);
     }
 }
