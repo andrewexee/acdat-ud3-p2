@@ -94,11 +94,12 @@ public class Main {
 
     private static void buscarPorId() {
         System.out.println("Socio dime el ID de la tarea que estás buscando: ");
-        int id = sc.nextInt();
+        Tarea tarea = TareaDAO.buscarPorId(sc.nextInt());
         sc.nextLine();
-
-        Tarea tarea = TareaDAO.buscarPorId(id);
-
-        System.out.println(tarea);
+        if (tarea != null) {
+            System.out.println(tarea);
+        } else {
+            System.out.println("Hermano, vaya mierdon de tarea que has buscado (ni existe)");
+        }
     }
 }
